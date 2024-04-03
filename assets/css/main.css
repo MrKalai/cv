@@ -869,6 +869,8 @@ body.loaded {
 }
 /* END: Headers */
 
+
+
 /*
 * ===============================
 *  START: Hero Section
@@ -1247,6 +1249,11 @@ body.loaded {
 	padding-bottom: 80px;
 	background: var(--tj-theme-accent-1);
 }
+
+.clickable {
+    cursor: pointer;
+}
+
 .portfolio-section .section-header {
 	margin-left: auto;
 	margin-right: auto;
