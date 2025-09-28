@@ -31,6 +31,9 @@ Description: Gerold - Personal Portfolio HTML5 Template
 
 ****************************************************/
 
+
+
+
 (function ($) {
 	"use strict";
 
@@ -71,6 +74,47 @@ Description: Gerold - Personal Portfolio HTML5 Template
 			lastScrollTop = scroll;
 		});
 
+
+
+
+
+
+
+const copyEmail = document.getElementById("copyEmail");
+const copyMessage = document.getElementById("copyMessage");
+
+copyEmail.addEventListener("click", function (e) {
+    const email = "mrkalai.org@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+        copyMessage.style.left = e.pageX + "px";
+        copyMessage.style.top = (e.pageY - 30) + "px";
+        copyMessage.style.display = "block";
+
+        copyMessage.classList.remove("bounceInDown");
+        void copyMessage.offsetWidth;
+        copyMessage.classList.add("bounceInDown");
+
+        setTimeout(() => {
+            copyMessage.style.display = "none";
+        }, 1500);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 		/*------------------------------------------------------
   	/  Hamburger Menu
   	/------------------------------------------------------*/
