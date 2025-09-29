@@ -2481,7 +2481,7 @@ button:hover .button-text {
 	position: absolute;
 	bottom: 15px;
 	left: 0;
-	width: calc(100% - 40px);
+	width: calc(100% - 1px);
 	border-radius: 15px;
 	background: var(--tj-theme-secondary);
 	right: 0;
@@ -2552,7 +2552,21 @@ button:hover .button-text {
 	text-transform: capitalize;
 	margin-bottom: 0;
 	transition: all 0.4s ease-in-out 0s;
+	text-align: center;   /* 🔥 Add this */
+	width: 100%;          /* 🔥 Ensure full width for centering */
 }
+
+.blog-link {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.blog-link:hover {
+  color: inherit; /* keeps text color same on hover */
+}
+
+
 /* END: Blog Section */
 
 
